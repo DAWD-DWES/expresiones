@@ -23,7 +23,7 @@
     $notaNumerica < 60 => 'F',
     default => 'Nota inválida'
 }</pre></td>
-                    <td><?php echo "Escribe tu código aquí"?></td>
+                    <td><!-- Escribe tu código aquí --></td>
                 </tr>
             </tbody>
             <tbody>
@@ -33,7 +33,7 @@
                     <td><pre>$precio = 563;
 $descuento = 15;</pre></td>
                     <td class="respuesta">$precio * (1 - $descuento / 100);</td>
-                    <td><?php echo "Escribe tu código aquí"?></td>
+                    <td><!-- Escribe tu código aquí --></td>
                 </tr>
             </tbody>
             <tbody>
@@ -44,7 +44,7 @@ $descuento = 15;</pre></td>
                 <tr>
                     <td>$anio = 2024;</td>
                     <td class="respuesta">($anio % 4 == 0 && $anio % 100 != 0) || ($anio % 400 == 0)</td>
-                    <td><?php echo "Escribe tu código aquí"?></td>
+                    <td><!-- Escribe tu código aquí --></td>
                 </tr>
             </tbody>
             <tbody>
@@ -53,7 +53,7 @@ $descuento = 15;</pre></td>
                         <p>Mostrar el mensaje: 25 grados Celsius corresponden a 77 grados Farenheit</p></td></tr>
             <td>$celsius = 25;</td>
             <td class="respuesta">($celsius * 9/5) + 32</td>
-            <td><?php echo "Escribe tu código aquí"?></td>
+            <td><!-- Escribe tu código aquí --></td>
         </tr>
     </tbody>
     <tbody>
@@ -64,7 +64,7 @@ $descuento = 15;</pre></td>
         <tr>
             <td>$nombre = 'Juan Perez Martinez';</td>
             <td class="respuesta">str_replace(range('a', 'z'), '', $nombre)</td>
-            <td><?php echo "Escribe tu código aquí"?></td>
+            <td><!-- Escribe tu código aquí --></td>
         </tr>
     </tbody>
     <tbody>
@@ -81,7 +81,7 @@ $anio = 1399;</pre></td>
                     || $anyo % 400 == 0 )) ? $dia <= 29 : $dia <= 29,
                     default => false
                 })</pre></td>
-            <td><?php echo "Escribe tu código aquí"?></td>
+            <td><!-- Escribe tu código aquí --></td>
         </tr>
     <tbody>
         <tr>
@@ -92,7 +92,7 @@ $anio = 1399;</pre></td>
             <td>$DNI = '44926413G';</td>
             <td class="respuesta">(strlen($DNI) == 9 && is_numeric ((int)substr($DNI, 0, 8)) && (int)substr($DNI, 0, 8) == substr($DNI, 0, 8) &&
                 substr($DNI, 8) == substr("TRWAGMYFPDXBNJZSQVHLCKE", ((int)substr($DNI, 0, 8) % 23), 1))</td>
-            <td><?php echo "Escribe tu código aquí"?></td>
+            <td><!-- Escribe tu código aquí --></td>
         </tr>
         <tr>
             <td colspan = "3"><p><b>Comprobar si alguien es mayor de edad con su fecha de nacimiento</b></p>
@@ -103,7 +103,7 @@ $anio = 1399;</pre></td>
 $fechaHoy = '23/10/2023';</pre></td>
             <td class="respuesta">(substr($fechaHoy, 6, 4) - substr($fechaNac, 6, 4) - 
                 (substr($fechaHoy, 3, 2) < substr($fechaNac, 3, 2) || substr($fechaHoy, 3, 2) == substr($fechaNac, 3, 2) && substr($fechaHoy, 0, 2) < substr($fechaNac, 0, 2))) > 18</td>
-            <td><?php echo "Escribe tu código aquí"?></td>
+            <td><!-- Escribe tu código aquí --></td>
         </tr>
     </tbody>
 </table>
