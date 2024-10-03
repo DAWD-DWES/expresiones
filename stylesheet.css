@@ -12,6 +12,9 @@ table {
     width: 50%;
 }
 
+p {
+    font-weight: bold;
+}
 
 tr {
     border-bottom: 1px solid #ddd;
