@@ -32,14 +32,6 @@ td {
     width: 50%;
 }
 
-.respuesta {
-    opacity: 0;
-}
-
-.respuesta:hover {
-    opacity: 1;
-}
-
 pre {
     font-family: "Times New Roman", courier, monospace;
     font-size: 1em;
