@@ -39,14 +39,14 @@
                 <td><!-- Escribe tu código aquí --></td>
             </tr>
             <tr>
-                <td colspan = "2"><p>Obtener las iniciales de un nombre y apellidos</p></td>
+                <td colspan = "2"><p>Obtener las iniciales de un nombre y apellidos (Letras en mayúsculas)</p></td>
             </tr>
             <tr>
                 <td>$nombre = 'Juan Perez Martinez';</td>
                 <td><!-- Escribe tu código aquí --></td>
             </tr>
             <tr><td colspan = "2"><p>Comprueba si una fecha es correcta entre el año 1000 y 3000</p></td><tr>
-            <tr><td>$dia = 28; $mes = 2; $anio = 1399;</td>
+            <tr><td>$dia = 28; $mes = 2; $anyo = 1399;</td>
                 <td><!-- Escribe tu código aquí --></td>
             </tr>
             <tr>
