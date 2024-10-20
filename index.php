@@ -58,11 +58,11 @@
                 <td>$celsius = 25;</td>
                 <td><?php
                     $celsius = 25;
-                    ($celsius * 9 / 5) + 32
+                    $celsius * 9 / 5 + 32
                     ?></td>
             </tr>
             <tr>
-                <td colspan = "2"><p>Obtener las iniciales de un nombre y apellidos</p></td>
+                <td colspan = "2"><p>Obtener las iniciales de un nombre y apellidos (Letras en mayúsculas)</p></td>
             </tr>
             <tr>
                 <td>$nombre = 'Juan Perez Martinez';
@@ -75,7 +75,7 @@
             <tr><td colspan = "2"><p>Comprueba si una fecha es correcta entre el año 1000 y 3000</p></td><tr>
             <tr><td>$dia = 28;
                     $mes = 2;
-                    $anio = 1399;
+                    $anyo = 1399;
                 </td>
                 <td><?php
                     $dia = 28;
