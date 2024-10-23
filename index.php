@@ -58,7 +58,7 @@
                 <td>$celsius = 25;</td>
                 <td><?php
                     $celsius = 25;
-                    $celsius * 9 / 5 + 32
+                    var_dump($celsius * 9 / 5 + 32);
                     ?></td>
             </tr>
             <tr>
@@ -84,8 +84,8 @@
                     var_dump(($anyo > 1000) && ($anyo < 3000) &&
                             (match ($mes) {
                                 4, 6, 9, 11 => ($dia >= 1) && ($dia <= 30),
-                                1, 3, 5, 7, 8, 10, 12 => ($dia >= 1) && ($dia <= 30),
-                                2 => ($dia >= 1) && (( ($anyo % 4 == 0 && $anyo % 100 != 0) || $anyo % 400 == 0 )) ? $dia <= 29 : $dia <= 29,
+                                1, 3, 5, 7, 8, 10, 12 => ($dia >= 1) && ($dia <= 31),
+                                2 => ($dia >= 1) && (( ($anyo % 4 == 0 && $anyo % 100 != 0) || $anyo % 400 == 0 )) ? $dia <= 29 : $dia <= 28,
                                 default => false
                             }))
                     ?></td>
@@ -98,7 +98,7 @@
                 </td>
                 <td><?php
                     $DNI = '44926413G';
-                    var_dump((strlen($DNI) == 9 && is_numeric((int) substr($DNI, 0, 8)) && (int) substr($DNI, 0, 8) == substr($DNI, 0, 8) &&
+                    var_dump((strlen($DNI) == 9 && (int) substr($DNI, 0, 8) == substr($DNI, 0, 8) &&
                             substr($DNI, 8) == substr("TRWAGMYFPDXBNJZSQVHLCKE", ((int) substr($DNI, 0, 8) % 23), 1)))
                     ?></td>
             </tr>
@@ -112,7 +112,7 @@
                     $fechaNac = '13/05/2001';
                     $fechaHoy = '23/10/2023';
                     var_dump(substr($fechaHoy, 6, 4) - substr($fechaNac, 6, 4) -
-                    (substr($fechaHoy, 3, 2) < substr($fechaNac, 3, 2) || substr($fechaHoy, 3, 2) == substr($fechaNac, 3, 2) && substr($fechaHoy, 0, 2) < substr($fechaNac, 0, 2)) > 18)
+                            (substr($fechaHoy, 3, 2) < substr($fechaNac, 3, 2) || substr($fechaHoy, 3, 2) == substr($fechaNac, 3, 2) && substr($fechaHoy, 0, 2) < substr($fechaNac, 0, 2)) > 18)
                     ?></td>
             </tr>
         </table>
