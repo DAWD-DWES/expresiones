@@ -98,8 +98,8 @@
                 </td>
                 <td><?php
                     $DNI = '44926413G';
-                    var_dump((strlen($DNI) == 9 && (int) substr($DNI, 0, 8) == substr($DNI, 0, 8) &&
-                            substr($DNI, 8) == substr("TRWAGMYFPDXBNJZSQVHLCKE", ((int) substr($DNI, 0, 8) % 23), 1)))
+                    var_dump(ctype_digit(substr($DNI, 0, -1)) && ctype_alpha(substr($DNI, -1)) &&
+                            strtoupper(substr($DNI, -1)) == substr("TRWAGMYFPDXBNJZSQVHLCKE", ((int) substr($DNI, 0, -1) % 23), 1));
                     ?></td>
             </tr>
             <tr>
