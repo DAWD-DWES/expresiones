@@ -45,7 +45,9 @@
                 <td>$nombre = 'Juan Perez Martinez';</td>
                 <td><!-- Escribe tu código aquí --></td>
             </tr>
-            <tr><td colspan = "2"><p>Comprueba si una fecha es correcta entre el año 1000 y 3000</p></td><tr>
+            <tr>
+                <td colspan = "2"><p>Comprueba si una fecha es correcta entre el año 1000 y 3000</p></td>
+            </tr>
             <tr><td>$dia = 28; $mes = 2; $anyo = 1399;</td>
                 <td><!-- Escribe tu código aquí --></td>
             </tr>
